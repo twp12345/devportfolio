@@ -133,7 +133,7 @@
         <div class="container">
 
             <div class="project shadow-large">
-                <div class="project-image" id="p01" onclick="">
+                <div class="project-image" id="p01" onclick="popupToggle()">
                     <img class="image" src="assets/thumbs/image01-thumb.jpg" alt="assets/fulls/image01-full.jpg" />
                     <div id="popup">
                         <div class="content">
@@ -142,16 +142,24 @@
                                 第一个人
                             </h4>
                             <p>介绍如下：blablabla</p>
-                            <div</dir>
                         </div>
                     </div>
                 </div>
                 
             </div>
 
-            <div class="project shadow-large" id="p02" onclick="">
-                <div class="project-image">
+            <div class="project shadow-large">
+                <div class="project-image" id="p02" onclick="popupToggle2()">
                     <img class="image" src="assets/thumbs/image01-thumb.jpg" alt="assets/fulls/image01-full.jpg" />
+                    <div id="popup2">
+                        <div class="content2">
+                            <img src="assets/UESTC.jpg" alt="">
+                            <h4>
+                                第二个人
+                            </h4>
+                            <p>介绍如下：blablabla</p>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
@@ -159,7 +167,16 @@
     </div>
 
     <!-- 弹出框 -->
-
+<script>
+    function popupToggle() {
+        const popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+    }
+    function popupToggle2() {
+        const popup = document.getElementById('popup2');
+        popup.classList.toggle('active');
+    }
+</script>
 
 
 

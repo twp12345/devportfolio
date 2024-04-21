@@ -13,31 +13,40 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- 导航栏 -->
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgba(40, 150, 229, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 25px;
+            padding: 8px 16px;
+            transition: 300ms;
+            border-radius: 99px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
+
+    <!-- 导航栏 -->
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="/index.html">home</a>
-            </li>
-            <li>
-                <a href="/team.html">team</a>
-            </li>
-            <li>
-                <a href="/project.html">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+        <div class="nav" style="height: 50px;">
+            <a href="/index.html">home</a>
+            <a href="/team.html">team</a>
+            <a href="/project.html">Projects</a>
+            <a href="#contact">Contact</a>
+        <div/>
     </header>
     <!-- End header -->
 
