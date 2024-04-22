@@ -11,27 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-
-    <!-- 导航栏 -->
-    <style>
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            background-color: rgba(40, 150, 229, 0.2);
-            backdrop-filter: blur(10px);
-        }
-
-        .nav {
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 25px;
-            padding: 8px 16px;
-            transition: 300ms;
-            border-radius: 99px;
-        }
-    </style>
+    <link href="css/team.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,14 +21,24 @@
 
     <!-- 导航栏 -->
     <header>
-        <div class="nav" style="height: 50px;">
-            <a href="/index.html">home</a>
-            <a href="/team.html">team</a>
-            <a href="/project.html">Projects</a>
-            <a href="#contact">Contact</a>
-        <div/>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="/index.html">home</a>
+            </li>
+            <li>
+                <a href="/team.html">team</a>
+            </li>
+            <li>
+                <a href="/project.html">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
     </header>
-    <!-- End header -->
 
     <div id="lead">
         <div id="lead-content">
@@ -78,7 +68,7 @@
                 </div>
                 <div class="col-md-8 vertical-center">
                     <p>
-                        电子科技大学（University of Electronic Science and Technology of China），简称“电子科大”，坐落于四川省成都市，是中华人民共和国教育部直属高校，由教育部、工业和信息化部、四川省和成都市共建；位列国家“双一流”、“985工程”、“211工程”，入选“2011计划”、“111计划”、卓越工程师教育培养计划、国家建设高水平大学公派研究生项目、中国政府奖学金来华留学生接收院校、全国深化创新创业教育改革示范高校，为“两电一邮”成员；是一所完整覆盖整个电子类学科，以电子信息科学技术为核心，以工为主，理工渗透，理、工、管、文、医协调发展的多科性研究型全国重点大学。
+                        电子科技大学（University of Electronic Science and Technology of China），简称“电子科大”，坐落于四川省成都市，是中华人民共和国教育部直属高校，由教育部、工业和信息化部、四川省和成都市共建；位列国家“双一流”、“985工程”、“211工程”，入选“2011计划”、“111计划”等的综合性大学。
                     </p>
                 </div>
 
